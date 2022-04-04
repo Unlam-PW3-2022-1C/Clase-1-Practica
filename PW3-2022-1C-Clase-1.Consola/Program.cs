@@ -30,7 +30,7 @@ namespace PW3_2022_1C_Clase_1.Consola
                 Console.WriteLine("|Consultá a la bola 8 mágica: |");
                 Console.WriteLine("???????????????????????????????");
                 Console.WriteLine("\n");
-                string preg = Console.ReadLine();
+                Console.ReadLine();
                 string respuesta = BolaOcho.Preguntar();
                 Console.WriteLine("\n");
                 Console.WriteLine($"{respuesta}");
