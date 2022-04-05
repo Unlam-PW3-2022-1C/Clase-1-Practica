@@ -30,8 +30,6 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.txtNum1 = new System.Windows.Forms.TextBox();
-            this.txtNum2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.btnSumar = new System.Windows.Forms.Button();
             this.lblResultado = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -39,43 +37,30 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(44, 28);
+            this.label1.Location = new System.Drawing.Point(214, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 20);
+            this.label1.Size = new System.Drawing.Size(108, 15);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Numero 1:";
+            this.label1.Text = "Ingrese la pregunta";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtNum1
             // 
-            this.txtNum1.Location = new System.Drawing.Point(128, 25);
+            this.txtNum1.Location = new System.Drawing.Point(140, 40);
+            this.txtNum1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNum1.Name = "txtNum1";
-            this.txtNum1.Size = new System.Drawing.Size(116, 27);
+            this.txtNum1.Size = new System.Drawing.Size(262, 23);
             this.txtNum1.TabIndex = 1;
-            // 
-            // txtNum2
-            // 
-            this.txtNum2.Location = new System.Drawing.Point(438, 25);
-            this.txtNum2.Name = "txtNum2";
-            this.txtNum2.Size = new System.Drawing.Size(116, 27);
-            this.txtNum2.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(354, 28);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Numero 2:";
             // 
             // btnSumar
             // 
             this.btnSumar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSumar.Location = new System.Drawing.Point(290, 85);
+            this.btnSumar.Location = new System.Drawing.Point(214, 67);
+            this.btnSumar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSumar.Name = "btnSumar";
-            this.btnSumar.Size = new System.Drawing.Size(58, 52);
+            this.btnSumar.Size = new System.Drawing.Size(132, 39);
             this.btnSumar.TabIndex = 4;
-            this.btnSumar.Text = "+";
+            this.btnSumar.Text = "Respuesta";
             this.btnSumar.UseVisualStyleBackColor = true;
             this.btnSumar.Click += new System.EventHandler(this.btnSumar_Click);
             // 
@@ -83,25 +68,24 @@
             // 
             this.lblResultado.AutoSize = true;
             this.lblResultado.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblResultado.Location = new System.Drawing.Point(271, 164);
+            this.lblResultado.Location = new System.Drawing.Point(237, 123);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(98, 28);
+            this.lblResultado.Size = new System.Drawing.Size(0, 21);
             this.lblResultado.TabIndex = 5;
-            this.lblResultado.Text = "Resultado";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(680, 275);
+            this.ClientSize = new System.Drawing.Size(595, 206);
             this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.btnSumar);
-            this.Controls.Add(this.txtNum2);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNum1);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -111,8 +95,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtNum1;
-        private System.Windows.Forms.TextBox txtNum2;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnSumar;
         private System.Windows.Forms.Label lblResultado;
     }
