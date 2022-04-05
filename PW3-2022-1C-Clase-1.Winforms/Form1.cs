@@ -20,7 +20,17 @@ namespace PW3_2022_1C_Clase_1.Winforms
 
         private void btnSumar_Click(object sender, EventArgs e)
         {
-            lblResultado.Text = $"{Calculadora.Sumar(txtNum1.Text, txtNum2.Text)}";
+            lblResultado.Text = $"{Respuestas.Respuesta()}";
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
