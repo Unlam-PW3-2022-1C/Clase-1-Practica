@@ -17,7 +17,7 @@ namespace PW3_2022_1C_Clase_1.Winforms
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new form1());
         }
     }
 }

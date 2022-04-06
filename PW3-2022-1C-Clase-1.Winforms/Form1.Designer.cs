@@ -1,6 +1,6 @@
 ﻿namespace PW3_2022_1C_Clase_1.Winforms
 {
-    partial class Form1
+    partial class form1
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,80 +28,92 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtNum1 = new System.Windows.Forms.TextBox();
-            this.txtNum2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnSumar = new System.Windows.Forms.Button();
-            this.lblResultado = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.TxtPregunta = new System.Windows.Forms.TextBox();
+            this.informacion = new System.Windows.Forms.Label();
+            this.btnAsk = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lblTitle
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(44, 28);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Numero 1:";
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Cascadia Code", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblTitle.Location = new System.Drawing.Point(80, 23);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(378, 32);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "Bienvenido a Bola 8 Magic!";
+            this.lblTitle.Click += new System.EventHandler(this.label1_Click);
             // 
-            // txtNum1
+            // TxtPregunta
             // 
-            this.txtNum1.Location = new System.Drawing.Point(128, 25);
-            this.txtNum1.Name = "txtNum1";
-            this.txtNum1.Size = new System.Drawing.Size(116, 27);
-            this.txtNum1.TabIndex = 1;
+            this.TxtPregunta.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.TxtPregunta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxtPregunta.Font = new System.Drawing.Font("Cascadia Code", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TxtPregunta.Location = new System.Drawing.Point(51, 110);
+            this.TxtPregunta.Name = "TxtPregunta";
+            this.TxtPregunta.PlaceholderText = "Pregunta";
+            this.TxtPregunta.Size = new System.Drawing.Size(432, 32);
+            this.TxtPregunta.TabIndex = 1;
             // 
-            // txtNum2
+            // informacion
             // 
-            this.txtNum2.Location = new System.Drawing.Point(438, 25);
-            this.txtNum2.Name = "txtNum2";
-            this.txtNum2.Size = new System.Drawing.Size(116, 27);
-            this.txtNum2.TabIndex = 3;
+            this.informacion.AutoSize = true;
+            this.informacion.Font = new System.Drawing.Font("Segoe UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+            this.informacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.informacion.Location = new System.Drawing.Point(162, 92);
+            this.informacion.Name = "informacion";
+            this.informacion.Size = new System.Drawing.Size(209, 17);
+            this.informacion.TabIndex = 2;
+            this.informacion.Text = "Coloque a continuación su pregunta";
             // 
-            // label2
+            // btnAsk
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(354, 28);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Numero 2:";
+            this.btnAsk.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnAsk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnAsk.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAsk.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAsk.Font = new System.Drawing.Font("Cascadia Code", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnAsk.Location = new System.Drawing.Point(51, 172);
+            this.btnAsk.Name = "btnAsk";
+            this.btnAsk.Size = new System.Drawing.Size(144, 39);
+            this.btnAsk.TabIndex = 3;
+            this.btnAsk.Text = "Preguntar";
+            this.btnAsk.UseVisualStyleBackColor = false;
+            this.btnAsk.Click += new System.EventHandler(this.btnAsk_Click);
             // 
-            // btnSumar
+            // pictureBox1
             // 
-            this.btnSumar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnSumar.Location = new System.Drawing.Point(290, 85);
-            this.btnSumar.Name = "btnSumar";
-            this.btnSumar.Size = new System.Drawing.Size(58, 52);
-            this.btnSumar.TabIndex = 4;
-            this.btnSumar.Text = "+";
-            this.btnSumar.UseVisualStyleBackColor = true;
-            this.btnSumar.Click += new System.EventHandler(this.btnSumar_Click);
+            this.pictureBox1.Image = global::PW3_2022_1C_Clase_1.Winforms.Properties.Resources.Bola8_removebg_preview;
+            this.pictureBox1.Location = new System.Drawing.Point(238, 148);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // lblResultado
+            // form1
             // 
-            this.lblResultado.AutoSize = true;
-            this.lblResultado.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblResultado.Location = new System.Drawing.Point(271, 164);
-            this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(98, 28);
-            this.lblResultado.TabIndex = 5;
-            this.lblResultado.Text = "Resultado";
-            // 
-            // Form1
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(680, 275);
-            this.Controls.Add(this.lblResultado);
-            this.Controls.Add(this.btnSumar);
-            this.Controls.Add(this.txtNum2);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtNum1);
-            this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.ClientSize = new System.Drawing.Size(529, 371);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btnAsk);
+            this.Controls.Add(this.informacion);
+            this.Controls.Add(this.TxtPregunta);
+            this.Controls.Add(this.lblTitle);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
+            this.Name = "form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Bola 8 Magic";
+            this.Load += new System.EventHandler(this.form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -109,11 +121,10 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtNum1;
-        private System.Windows.Forms.TextBox txtNum2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnSumar;
-        private System.Windows.Forms.Label lblResultado;
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.TextBox TxtPregunta;
+        private System.Windows.Forms.Label informacion;
+        private System.Windows.Forms.Button btnAsk;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
