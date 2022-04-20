@@ -11,16 +11,36 @@ using System.Windows.Forms;
 
 namespace PW3_2022_1C_Clase_1.Winforms
 {
-    public partial class Form1 : Form
+    public partial class form1 : Form
     {
-        public Form1()
+        public string text = "";
+        public form1()
         {
             InitializeComponent();
+           
         }
 
-        private void btnSumar_Click(object sender, EventArgs e)
+
+        private void label1_Click(object sender, EventArgs e)
         {
-            lblResultado.Text = $"{Calculadora.Sumar(txtNum1.Text, txtNum2.Text)}";
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnAsk_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Form2 form = new Form2();
+            form.Show();
+        }
+
+        private void form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
